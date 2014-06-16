@@ -40,7 +40,7 @@ app.factory('apiDataService', function($http) {
 
     var _cities = function() {
 
-        return $http.get("/Home/Cities").then(function(results) {
+        return $http.get("/api/Cities").then(function(results) {
             return results.data;
         });
     };
